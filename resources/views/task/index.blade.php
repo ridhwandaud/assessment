@@ -32,6 +32,7 @@
 
                           <div class="col-md-6">
                             <input id="id" name="workspace_id" value={{$id}} hidden />
+                            
                             <input id="deadline" class="form-control @error('email') is-invalid @enderror" name="deadline" value="{{ old('deadline') }}" required autofocus>
 
                             @error('deadline')

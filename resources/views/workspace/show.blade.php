@@ -16,7 +16,9 @@
       <div class="col-md-3">
         <a data-bs-toggle="modal" id="smallButton" data-bs-target="#toggleModal-{{$task->id}}">
           <div class="card">
-              <div class="card-header">{{$task->id}}</div>
+              <div class="card-header">
+                {{$task->complete ? 'Completed' : 'Incomplete' }}
+              </div>
               <div class="card-body">
                   <div class="card-title {{$task->complete ? 'text-decoration-line-through' : ''}}">
                       {{$task->name}}
@@ -36,7 +38,7 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title">Mark task as {{$task->complete ? 'Incomplete' : 'complete' }}</h5>
+                  <h5 class="modal-title">Mark task as {{$task->complete ? 'incomplete' : 'completed' }}</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
