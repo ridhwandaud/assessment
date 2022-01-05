@@ -13,7 +13,7 @@
     </div>
     <div class="row">
     @foreach($workspaces as $workspace)
-    <div class="col-md-3">
+    <div class="col-md-3 mb-3">
         <a href="/workspace/{{$workspace->id}}">
             <div class="card">
                 <div class="card-header">{{$workspace->id}}</div>

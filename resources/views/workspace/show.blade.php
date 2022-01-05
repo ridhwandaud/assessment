@@ -13,7 +13,7 @@
     </div>
     <div class="row">
       @foreach($tasks as $task)
-      <div class="col-md-3">
+      <div class="col-md-3 mb-3">
         <a data-bs-toggle="modal" id="smallButton" data-bs-target="#toggleModal-{{$task->id}}">
           <div class="card">
               <div class="card-header">
